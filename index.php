@@ -30,7 +30,7 @@
     <div class="container">
 		  <div class="row-fluid">
 			<div class="col-md-12">
-			<h2><span class="glyphicon glyphicon-edit"></span> Nueva Cotización</h2>
+			<h1><span class="glyphicon glyphicon-edit"></span> Nueva Cotización Practicando con GIT</h1>
 			<hr>
 			<form class="form-horizontal" role="form" id="datos_cotizacion">
 				<div class="form-group row">
@@ -57,22 +57,21 @@
 								<input type="email" class="form-control" id="email" placeholder="Email">
 							</div>
 						</div>
-				
-				
-				<div class="col-md-12">
-					<div class="pull-right">
-						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+
+
+				<div class="col-md-12" align="center">
+						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
 						 <span class="glyphicon glyphicon-plus"></span> Agregar productos
 						</button>
-						<button type="submit" class="btn btn-default">
+						<button type="submit" class="btn btn-warning">
 						  <span class="glyphicon glyphicon-print"></span> Imprimir
 						</button>
-					</div>	
+
 				</div>
 			</form>
 			<br><br>
 		<div id="resultados" class='col-md-12'></div><!-- Carga los datos ajax -->
-	
+
 			<!-- Modal -->
 			<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog modal-lg" role="document">
@@ -95,13 +94,13 @@
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-					
+
 				  </div>
 				</div>
 			  </div>
 			</div>
-			
-			</div>	
+
+			</div>
 		 </div>
 	</div>
 
@@ -127,7 +126,7 @@
 				success:function(data){
 					$(".outer_div").html(data).fadeIn('slow');
 					$('#loader').html('');
-					
+
 				}
 			})
 		}
@@ -151,7 +150,7 @@
 			return false;
 			}
 			//Fin validacion
-			
+
 			$.ajax({
         type: "POST",
         url: "./ajax/agregar_cotizador.php",
@@ -164,10 +163,10 @@
 		}
 			});
 		}
-		
+
 			function eliminar (id)
 		{
-			
+
 			$.ajax({
         type: "GET",
         url: "./ajax/agregar_cotizador.php",
@@ -181,7 +180,7 @@
 			});
 
 		}
-		
+
 		$("#datos_cotizacion").submit(function(){
 		  var atencion = $("#atencion").val();
 		  var tel1 = $("#tel1").val();
