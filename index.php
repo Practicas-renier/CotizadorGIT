@@ -30,16 +30,18 @@
     <div class="container">
 		  <div class="row-fluid">
 			<div class="col-md-12">
-			<h1><span class="glyphicon glyphicon-edit"></span> Nueva Cotización Practicando con GIT</h1>
+
+			<h1 align="center"><span class="glyphicon glyphicon-edit"></span> Nueva Cotización </h1>
+
 			<hr>
 			<form class="form-horizontal" role="form" id="datos_cotizacion">
 				<div class="form-group row">
 				  <label for="atencion" class="col-md-1 control-label">Atención:</label>
 				  <div class="col-md-3">
-					  <input type="text" class="form-control" id="atencion" placeholder="Atención" required>
+					  <input type="text" class="form-control" id="atencion" placeholder="Nombre del Cliente" required>
 				  </div>
 				  <label for="tel1" class="col-md-1 control-label">Teléfono:</label>
-							<div class="col-md-2">
+							<div class="col-md-6">
 								<input type="text" class="form-control" id="tel1" placeholder="Teléfono" required>
 							</div>
 				</div>
@@ -60,10 +62,12 @@
 
 
 				<div class="col-md-12" align="center">
-						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+
+						<button type="button" class="btn btn-xs btn-info" data-toggle="modal" data-target="#myModal">
 						 <span class="glyphicon glyphicon-plus"></span> Agregar productos
 						</button>
-						<button type="submit" class="btn btn-warning">
+						<button type="submit" class="btn btn-xs btn-default">
+
 						  <span class="glyphicon glyphicon-print"></span> Imprimir
 						</button>
 
